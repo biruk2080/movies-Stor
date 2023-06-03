@@ -12,6 +12,7 @@ public:
     this->majorActorFirstName = majorActorFirstName;
     this->majorActorLastName = majorActorLastName;
     this->month = month;
+    set_gener("Classic");
   }
 
 
@@ -21,7 +22,8 @@ public:
 
   string MajorActorFirstName() const { return majorActorFirstName; }
 
-  
+
+bool operator!=(const Movie& other) const { return !(*this == other); }
 
 bool operator==( const Movie& other) const override {
     const auto* that = dynamic_cast<const Classic*>(&other);
@@ -57,26 +59,8 @@ bool operator==( const Movie& other) const override {
   }
 
   bool operator>(const Movie& other) const override {
-    const auto* that = dynamic_cast<const Classic*>(&other);
-    if (!that) {
-      return false;
-    }
-    if (this->MajorActorFirstName() != that->MajorActorFirstName()) {
-      return this->MajorActorFirstName() > that->MajorActorFirstName();
-    }
-
-    if (this->MajorActorLastName() != that->MajorActorLastName()) {
-      return this->MajorActorLastName() > that->MajorActorLastName();
-    }
-
-    if (this->Year() != that->Year()) {
-      return this->Year() > other.Year();
-    }
-    
-    if (this->Month() != that->Month()) {
-      return this->Month() > that->Month();
-    }
-    return false;
+  
+    return !(*this < other) && (*this != other);
   }
 
 private:

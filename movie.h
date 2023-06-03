@@ -9,7 +9,7 @@ using namespace std;
 class Movie {
   friend ostream &operator<<(ostream &out, const Movie &other) {
 
-    out << "Genre/Title: " + other.type<<", " + other.title
+    out << "Genre/Title: " <<other.gener<<", " + other.title
        << ", Director: " << other.director
        << ", Released: " << other.year << ", Stock: " << other.stock
        << " Currently being borrowed: " << other.Borrowed();
@@ -39,21 +39,26 @@ public:
 
   void set_borrowed(int isBorrowed) { this->borrowed = isBorrowed; }
 
+  void set_gener(string gener) { this-> gener = gener; };
   // Getters 
 
-  string Title() const { return this->title; } 
+  string Title() const { return title; } 
 
-  int Year() const { return this->year; }
+  int Year() const { return year; }
 
-  int Stock() const { return this->stock; }
+  int Stock() const { return stock; }
 
-  int Borrowed() const { return this->borrowed; }
+  int Borrowed() const { return borrowed; }
 
-  char Type() const { return this->type; }
+  char Type() const { return type; }
 
-  string Director() const { return this->director; }
+  string Director() const { return director; }
+
+  string Gener() const { return gener; };
 
   // operator overloads 
+
+  virtual bool operator!=(const Movie& other) const = 0;
 
   virtual bool operator==(const Movie& other) const = 0;
 
@@ -69,6 +74,7 @@ private:
   int year;
   string director;
   int borrowed;
+  string gener;
 };
 
 #endif /* Movie_h */
