@@ -8,6 +8,9 @@ public:
   Drama(int stock, const string &director, const string &title, int year)
       : Movie(stock, title, director, year, 'D') { set_gener("Drama"); }
 
+
+  bool operator!=(const Movie& other) const { return !(*this == other); }
+  
   bool operator==(const Movie& other) const  {
     return Type() == other.Type() &&
            Director() == other.Director() &&
@@ -27,13 +30,8 @@ public:
   }
 
   bool operator>(const Movie& other) const  {
-    if (Director() != other.Director()) {
-      return Director() > other.Director();
-    }
-    if (Title() != other.Title()) {
-      return Title() > other.Title();
-    }
-    return false;
+  
+    return !(*this < other) && (*this != other);
   }
 };
 
