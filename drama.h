@@ -6,7 +6,7 @@
 class Drama : public Movie {
 public:
   Drama(int stock, const string &director, const string &title, int year)
-      : Movie(stock, title, director, year, 'D') {}
+      : Movie(stock, title, director, year, 'D') { set_gener("Drama"); }
 
   bool operator==(const Movie& other) const  {
     return Type() == other.Type() &&

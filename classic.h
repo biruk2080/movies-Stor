@@ -12,6 +12,7 @@ public:
     this->majorActorFirstName = majorActorFirstName;
     this->majorActorLastName = majorActorLastName;
     this->month = month;
+    set_gener("Classic");
   }
 
 
