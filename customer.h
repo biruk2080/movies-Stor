@@ -10,14 +10,14 @@ it uses a vector data structure to store customer transcation history and movie 
 #include <algorithm>
 #include <iostream>
 #include <string>
-#include <utility>
-#include <vector>
 #include <unordered_map>
+#include <vector>
+
 using namespace std;
 class Customer {
   friend ostream &operator<<(ostream &os, const Customer &c) {
-    os << c.getFirstName() << " " << c.getLastName() << " #"
-       << c.getCustomerID();
+    os << c.FirstName() << " " << c.LastName() << " #"
+       << c.CustomerID();
     return os;
   }
 
@@ -29,18 +29,18 @@ public:
   // print out the all transaction hsitories of the customer 
   void outputHistory();
   // getters of last, first name and ID of the customrt 
-  string getFirstName() const;
-  string getLastName() const;
-  int getCustomerID() const;
+  string FirstName() const;
+  string LastName() const;
+  int CustomerID() const;
   //this function determines if the customer is currently borrowing 
 //a specific movie based on its genre and index. 
 //It returns true if the movie is being borrowed and false otherwise.
   bool currentlyBorrowed(char genre, int index);
   // setter
   // attached the borrwing moies type on the customer borrwed movie list 
-  void borrowMovie(char genre, int index);
+  void Borrow(char genre, int index);
   // remove the return type of movie from the customer borrwed movie list 
-  void returnMovie(char genre, int index);
+  void Return(char genre, int index);
 
 private:
 // private member variable 

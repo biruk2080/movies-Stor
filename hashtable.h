@@ -7,7 +7,7 @@
 #include <vector>
 using namespace std;
 
-template <typename K, typename V> // k for key, v for value
+template <typename K, typename V> 
 class HashTable {
   friend ostream &operator<<(ostream &os, const HashTable &ht) {
     for (int i = 0; i < ht.keys.size(); i++) {
@@ -19,15 +19,12 @@ class HashTable {
 public:
   HashTable() = default;
 
-  // Based some of these off of Java's HashMap.
   void put(K &key, V &value) {
     int index = this->indexOf(key);
-    if (index ==
-        -1) { // indexOf returns -1 if the key doesn't exist in our hashtable.
+    if (index == -1) { 
       keys.push_back(key);
       values.push_back(value);
-    } else { // If our indexOf does not return -1, that means it already exists,
-             // just replace the old value with the new one.
+    } else { 
       values[index] = value;
     }
   }
@@ -56,13 +53,12 @@ public:
     return values[index];
   }
 
-  int indexOf(K key) { // Returns -1 if key doesn't exist, else, return the
-                       // index of our key in our vector.
-    auto it = find(keys.begin(), keys.end(), key);
-    if (it != keys.end()) {
-      return it - keys.begin(); // Got our index.
+  int indexOf(K key) {
+    auto iterator = find(keys.begin(), keys.end(), key);
+    if (iterator != keys.end()) {
+      return iterator - keys.begin(); 
     }
-    return -1; // Didn't find object, return -1;
+    return -1; 
   }
 
 private:

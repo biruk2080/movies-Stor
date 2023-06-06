@@ -23,11 +23,11 @@ public:
   string MajorActorFirstName() const { return majorActorFirstName; }
 
 
-bool operator!=(const Movie& other) const { return !(*this == other); }
+bool operator!=(const Movie& other) const override{ return !(*this == other); }
 
 bool operator==( const Movie& other) const override {
     const auto* that = dynamic_cast<const Classic*>(&other);
-     if (!that) {
+     if (that == nullptr) {
       return false;
     }
     return this->Director() == that->Director() &&
@@ -40,7 +40,7 @@ bool operator==( const Movie& other) const override {
 
   bool operator<(const Movie& other) const override{
     const auto* that = dynamic_cast<const Classic*>(&other);
-    if (!that) {
+    if (that == nullptr) {
       return false;
     }
     if (this->Year() != that->Year()) {

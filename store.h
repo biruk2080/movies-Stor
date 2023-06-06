@@ -9,6 +9,7 @@ from the file and process accordingly.
 #include "hashtable.h"
 #include "inventory.h"
 #include "movie.h"
+#include "transaction.h"
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -19,9 +20,9 @@ public:
   Store();
 // read the movies data file and store in the inventory 
 //by using Inventory object refaerance and pass the parametrs. 
-  void fillInventory(const string &fileName);
+  void CreateInventory(const string &fileName);
 // read the customer data file and store in hashTable
-  void fillStoreWithCustomers(const string &fileName);
+  void AddCustomer(const string &fileName);
 // read the transcation data from the file 
   void processTransactions(const string &fileName);
 

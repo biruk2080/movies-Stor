@@ -1,0 +1,597 @@
+Tue Jun  6 03:10:59 UTC 2023
+Linux LinuxMachine 5.15.90.1-microsoft-standard-WSL2 #1 SMP Fri Jan 27 02:56:13 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+uid=1000(cssuwbstudent) gid=1000(cssuwbstudent) groups=1000(cssuwbstudent),10(wheel)
+=====================================================
+1. Compiles without warnings with -Wall -Wextra flags
+=====================================================
+customer.cpp: In member function ‘void Customer::Return(char, int)’:
+customer.cpp:41:28: warning: unused parameter ‘genre’ [-Wunused-parameter]
+ void Customer::Return(char genre, int index) {
+                       ~~~~~^~~~~
+customer.cpp: In member function ‘bool Customer::currentlyBorrowed(char, int)’:
+customer.cpp:51:39: warning: unused parameter ‘genre’ [-Wunused-parameter]
+ bool Customer::currentlyBorrowed(char genre, int index) {
+                                  ~~~~~^~~~~
+=====================================================
+2. Runs and produces correct output
+=====================================================
+Start testAlLMovies
+End test
+Start testCustomers
+End testCustomers
+Start testHashTable
+End testHashTable
+=====================================
+Start testStoreFinal
+Invalid Movie Type found: Z
+Invalid Movie Type found: Z
+Comedy Shelf: 
+Genre/Title: Comedy, Nora, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Comedy, Woody, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, Rob, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, Gore, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, Different, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, Joel, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, John, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Drama Shelf: 
+Genre/Title: Drama, Barry, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Drama, Gus, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Phillippe, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Steven, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Jonathan, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Clint, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Nancy, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Classic Shelf: 
+Genre/Title: Classic, Michael, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, Victor, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Classic, Hal, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Classic, George, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, Victor, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, George, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, John, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Classic, Frank, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, Stanley, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+
+History transactions for   #1111:
+is empty
+
+History transactions for   #8000:
+is empty
+
+History transactions for   #9000:
+is empty
+
+Comedy Movie not found: You've Got Mail 1998
+Drama Movie not found: Barry Levinson Good Morning Vietnam
+Classic Movie not found: 5 1940 Katherine Hepburn
+Comedy Movie not found: Sleepless in Seattle 1993
+Classic Movie not found: 2 1971 Malcolm McDowell
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 3 1971 Ruth Gordon
+Comedy Movie not found: Annie Hall 1977
+Classic Movie not found: 2 1971 Malcolm McDowell
+Invalid genre: Z
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 3 1971 Ruth Gordon
+Drama Movie not found: Gus Van Sant Good Will Hunting
+Drama Movie not found: Phillippe De Broca King of Hearts
+Classic Movie not found: 2 1971 Malcolm McDowell
+Classic Movie not found: 5 1940 Cary Grant
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 3 1971 Ruth Gordon
+Comedy Movie not found: When Harry Met Sally 1989
+Drama Movie not found: Jonathan Demme Silence of the Lambs
+Comedy Movie not found: You've Got Mail 1998
+Comedy Movie not found: You've Got Mail 1998
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 10 1941 Humphrey Bogart
+Classic Movie not found: 3 1971 Ruth Gordon
+Invalid command:  X
+Classic Movie not found: 9 1938 Cary Grant
+Classic Movie not found: 3 1971 Ruth Gordon
+Drama Movie not found: Nancy Savoca Dogfight
+Drama Movie not found: Steven Spielberg Schindler's List
+Classic Movie not found: 3 1971 Ruth Gordon
+Invalid command:  Z
+Classic Movie not found: 3 1971 Ruth Gordon
+Comedy Movie not found: National Lampoon's Animal House 1978
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 3 1971 Ruth Gordon
+Drama Movie not found: Nancy Savoca Dogfight
+Drama Movie not found: Clint Eastwood Unforgiven
+Comedy Movie not found: Fargo 1996
+Classic Movie not found: 2 1971 Malcolm McDowell
+Comedy Movie not found: Bogus Title 2001
+Invalid media type: Z
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 3 1971 Ruth Gordon
+Classic Movie not found: 3 1971 Ruth Gordon
+Drama Movie not found: Steven Spielberg Bogus Title
+Comedy Shelf: 
+Genre/Title: Comedy, Nora, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Comedy, Woody, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, Rob, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, Gore, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, Different, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, Joel, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Comedy, John, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Drama Shelf: 
+Genre/Title: Drama, Barry, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Drama, Gus, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Phillippe, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Steven, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Jonathan, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Clint, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Drama, Nancy, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Classic Shelf: 
+Genre/Title: Classic, Michael, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, Victor, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Classic, Hal, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Classic, George, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, Victor, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, George, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, John, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+Genre/Title: Classic, Frank, Director: ,, Released: 0, Stock: 20 Currently being borrowed: 0
+Genre/Title: Classic, Stanley, Director: ,, Released: 0, Stock: 10 Currently being borrowed: 0
+
+History transactions for   #1111:
+is empty
+
+History transactions for   #7777:
+is empty
+
+History transactions for   #8000:
+is empty
+
+History transactions for   #9000:
+is empty
+
+History transactions for   #3333:
+is empty
+
+End testStoreFinal
+=====================================
+Start pisanTest
+End pisanTest
+Done.
+=====================================================
+3. clang-tidy warnings are fixed
+=====================================================
+18487 warnings generated.
+33787 warnings generated.
+45150 warnings generated.
+64640 warnings generated.
+85373 warnings generated.
+96758 warnings generated.
+Suppressed 96758 warnings (96758 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+=====================================================
+4. clang-format does not find any formatting issues
+=====================================================
+Running clang-format on ./customer.cpp
+Running clang-format on ./inventory.cpp
+Running clang-format on ./main.cpp
+Running clang-format on ./store.cpp
+Running clang-format on ./store_test.cpp
+Running clang-format on ./transaction.cpp
+=====================================================
+5. No memory leaks using g++
+=====================================================
+=====================================================
+6. No memory leaks using valgrind, look for "definitely lost" 
+=====================================================
+==25713== Memcheck, a memory error detector
+==25713== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==25713== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==25713== Command: ./a.out
+==25713== Parent PID: 25387
+==25713== 
+==25713== 
+==25713== HEAP SUMMARY:
+==25713==     in use at exit: 5,920 bytes in 41 blocks
+==25713==   total heap usage: 247 allocs, 206 frees, 124,891 bytes allocated
+==25713== 
+==25713== LEAK SUMMARY:
+==25713==    definitely lost: 2,048 bytes in 14 blocks
+==25713==    indirectly lost: 3,872 bytes in 27 blocks
+==25713==      possibly lost: 0 bytes in 0 blocks
+==25713==    still reachable: 0 bytes in 0 blocks
+==25713==         suppressed: 0 bytes in 0 blocks
+==25713== Rerun with --leak-check=full to see details of leaked memory
+==25713== 
+==25713== For lists of detected and suppressed errors, rerun with: -s
+==25713== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=====================================================
+7. Tests have full code coverage
+=====================================================
+File '/home/cssuwbstudent/mesgana/343-movies-biruk2080/customer.cpp':
+Name                                                                                                                                                                                        Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Customer::Customer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)         1       0 100.00%         5       0 100.00%         0       0   0.00%
+Customer::CustomerID() const                                                                                                                                                                      1       0 100.00%         1       0 100.00%         0       0   0.00%
+Customer::FirstName[abi:cxx11]() const                                                                                                                                                            1       0 100.00%         1       0 100.00%         0       0   0.00%
+Customer::LastName[abi:cxx11]() const                                                                                                                                                             1       0 100.00%         1       0 100.00%         0       0   0.00%
+Customer::Borrow(char, int)                                                                                                                                                                       1       0 100.00%         1       0 100.00%         0       0   0.00%
+Customer::addHistory(Transaction*)                                                                                                                                                                1       1   0.00%         3       3   0.00%         0       0   0.00%
+Customer::outputHistory()                                                                                                                                                                         5       2  60.00%        11       4  63.64%         4       3  25.00%
+Customer::Return(char, int)                                                                                                                                                                       3       0 100.00%         6       0 100.00%         2       1  50.00%
+Customer::currentlyBorrowed(char, int)                                                                                                                                                            1       0 100.00%         3       0 100.00%         0       0   0.00%
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                            15       3  80.00%        32       7  78.12%         6       4  33.33%
+
+File '/home/cssuwbstudent/mesgana/343-movies-biruk2080/inventory.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                                   Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Inventory::addComedy(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)                                                                                                                                                                                               4       0 100.00%        10       0 100.00%         2       0 100.00%
+Inventory::addDrama(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)                                                                                                                                                                                                4       0 100.00%        10       0 100.00%         2       0 100.00%
+Inventory::addClassic(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, int)         4       0 100.00%        12       0 100.00%         2       0 100.00%
+Inventory::borrowMovie(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)                                                                                                                                                                                                                                                                                         19      19   0.00%        34      34   0.00%        12      12   0.00%
+Inventory::returnMovie(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)                                                                                                                                                                                                                                                                                         10      10   0.00%        17      17   0.00%         6       6   0.00%
+Inventory::indexOfComedy(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)                                                                                                                                                                                                                                                                                        9       0 100.00%         8       0 100.00%         8       1  87.50%
+Inventory::indexOfDrama(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                      9       0 100.00%         8       0 100.00%         8       0 100.00%
+Inventory::indexOfClassic(int const&, int const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                           13       0 100.00%        11       0 100.00%        12       2  83.33%
+Inventory::getComedyMovie(int const&)                                                                                                                                                                                                                                                                                                                                                                        6       1  83.33%         7       3  57.14%         4       2  50.00%
+Inventory::getDramaMovie(int const&)                                                                                                                                                                                                                                                                                                                                                                         6       1  83.33%         7       3  57.14%         4       2  50.00%
+Inventory::getClassicMovie(int const&)                                                                                                                                                                                                                                                                                                                                                                       6       1  83.33%         7       3  57.14%         4       2  50.00%
+Inventory::sortComedy(Comedy*, Comedy*)                                                                                                                                                                                                                                                                                                                                                                      1       0 100.00%         1       0 100.00%         0       0   0.00%
+Inventory::sortDrama(Drama*, Drama*)                                                                                                                                                                                                                                                                                                                                                                         1       0 100.00%         3       0 100.00%         0       0   0.00%
+Inventory::sortClassic(Classic*, Classic*)                                                                                                                                                                                                                                                                                                                                                                   1       0 100.00%         3       0 100.00%         0       0   0.00%
+Inventory::sortShelves()                                                                                                                                                                                                                                                                                                                                                                                     1       0 100.00%         5       0 100.00%         0       0   0.00%
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                                       94      32  65.96%       143      60  58.04%        64      27  57.81%
+
+File '/home/cssuwbstudent/mesgana/343-movies-biruk2080/main.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                                   Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+main                                                                                                                                                                                                                                                                                                                                                                                                         1       0 100.00%         5       0 100.00%         0       0   0.00%
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%         5       0 100.00%         0       0   0.00%
+
+File '/home/cssuwbstudent/mesgana/343-movies-biruk2080/store.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                                   Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Store::Store()                                                                                                                                                                                                                                                                                                                                                                                               1       0 100.00%         1       0 100.00%         0       0   0.00%
+Store::CreateInventory(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                                                              25       2  92.00%        42       5  88.10%        20       5  75.00%
+Store::AddCustomer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                                                                  16       3  81.25%        26       7  73.08%        12       5  58.33%
+Store::processTransactions(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                                                         111      49  55.86%       251     122  51.39%        82      43  47.56%
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                                      153      54  64.71%       320     134  58.13%       114      53  53.51%
+
+File '/home/cssuwbstudent/mesgana/343-movies-biruk2080/store_test.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                                   Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+testAllMovies()                                                                                                                                                                                                                                                                                                                                                                                              1       0 100.00%        36      24  33.33%         0       0   0.00%
+testHashTable()                                                                                                                                                                                                                                                                                                                                                                                              1       0 100.00%        24       5  79.17%         0       0   0.00%
+testCustomers()                                                                                                                                                                                                                                                                                                                                                                                              1       0 100.00%        12       5  58.33%         0       0   0.00%
+testStoreFinal()                                                                                                                                                                                                                                                                                                                                                                                             1       0 100.00%        10       0 100.00%         0       0   0.00%
+pisanTest()                                                                                                                                                                                                                                                                                                                                                                                                  3       0 100.00%        17       2  88.24%         2       0 100.00%
+testAll()                                                                                                                                                                                                                                                                                                                                                                                                    1       0 100.00%         7       0 100.00%         0       0   0.00%
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                                        8       0 100.00%       106      36  66.04%         2       0 100.00%
+
+File '/home/cssuwbstudent/mesgana/343-movies-biruk2080/transaction.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                                   Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Transaction::Transaction(char, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, char)                                                                                                                                                                                                      16      16   0.00%        21      21   0.00%        10      10   0.00%
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                                       16      16   0.00%        21      21   0.00%        10      10   0.00%
+=====================================================
+The lines below were never executed
+=====================================================
+   31|      0|      return false;
+   32|      0|    }
+   44|      0|      return false;
+   45|      0|    }
+   49|      0|    if (this->Month() != that->Month()) {
+   50|      0|      return this->Month() < that->Month();
+   51|      0|    }
+   52|      0|    if (this->MajorActorFirstName() != that->MajorActorFirstName()) {
+   53|      0|      return this->MajorActorFirstName() < that->MajorActorFirstName();
+   54|      0|    }
+   55|      0|    if (this->MajorActorLastName() != that->MajorActorLastName()) {
+   56|      0|      return this->MajorActorLastName() < that->MajorActorLastName();
+   57|      0|    }
+   58|      0|    return false;
+   59|      0|  }
+   30|      0|    if (Year() != other.Year()) {
+   31|      0|      return Year() < other.Year();
+   32|      0|    }
+   33|      0|    return false;
+   34|      0|  }
+   20|      0|void Customer::addHistory(Transaction *transaction) {
+   21|      0|  history.push_back(transaction);
+   22|      0|}
+   36|      0|  for (auto *transaction : history) {
+   37|      0|    cout << *transaction << endl;
+   38|      0|  }
+   39|      0|}
+   18|      0|  friend ostream &operator<<(ostream &os, const Customer &c) {
+   19|      0|    os << c.FirstName() << " " << c.LastName() << " #"
+   20|      0|       << c.CustomerID();
+   21|      0|    return os;
+   22|      0|  }
+   25|      0|    if (Title() != other.Title()) {
+   26|      0|      return Title() < other.Title();
+   27|      0|    }
+   29|      0|    return false;
+   30|      0|  }
+   28|      0|      values[index] = value;
+   29|      0|    }
+  |   28|      0|      values[index] = value;
+  |   29|      0|    }
+  |   28|      0|      values[index] = value;
+  |   29|      0|    }
+   35|      0|      return false;
+   36|      0|    }
+   45|      0|      return;
+   46|      0|    }
+   60|      0|bool Inventory::borrowMovie(const string &type, int index) {
+   62|      0|  if (type == "F") {
+   64|      0|    int stock = comedies[index]->Stock();
+   66|      0|    if (stock - 1 < 0) {
+   67|      0|      cout << "out of stock " << comedies[index]->Title() << endl;
+   68|      0|      return false;
+   69|      0|    }
+   71|      0|    comedies[index]->set_stock(stock - 1);
+   72|      0|    comedies[index]->set_borrowed(comedies[index]->Borrowed() + 1);
+   73|      0|    return true;
+   74|      0|  }
+   76|      0|  if (type == "D") {
+   78|      0|    int stock = dramas[index]->Stock();
+   80|      0|    if (stock - 1 < 0) {
+   81|      0|      cout << "out of stock " << dramas[index]->Title() << endl;
+   82|      0|      return false;
+   83|      0|    }
+   85|      0|    dramas[index]->set_borrowed(dramas[index]->Borrowed() + 1);
+   86|      0|    dramas[index]->set_stock(stock - 1);
+   87|      0|    return true;
+   88|      0|  }
+   90|      0|  if (type == "C") {
+   92|      0|    int stock = classics[index]->Stock();
+   94|      0|    if (stock - 1 < 0) {
+   95|      0|      cout << "out of stock " << classics[index]->Title() << endl;
+   96|      0|      return false;
+   97|      0|    }
+   99|      0|    classics[index]->set_borrowed(classics[index]->Borrowed() + 1);
+  100|      0|    classics[index]->set_stock(stock - 1);
+  101|      0|    return true;
+  102|      0|  }
+  104|      0|  cout << "invalid type: " << type << endl;
+  105|      0|  return false;
+  106|      0|}
+  110|      0|void Inventory::returnMovie(const string &type, int index) {
+  112|      0|  if (type == "F") {
+  114|      0|    int stock = comedies[index]->Stock();
+  116|      0|    comedies[index]->set_borrowed(comedies[index]->Borrowed() - 1);
+  117|      0|    comedies[index]->set_stock(stock + 1);
+  118|      0|  } else if (type == "D") {
+  120|      0|    int stock = dramas[index]->Stock();
+  122|      0|    dramas[index]->set_borrowed(dramas[index]->Borrowed() - 1);
+  123|      0|    dramas[index]->set_stock(stock + 1);
+  124|      0|  } else if (type == "C") {
+  126|      0|    int stock = classics[index]->Stock();
+  128|      0|    classics[index]->set_borrowed(classics[index]->Borrowed() - 1);
+  129|      0|    classics[index]->set_stock(stock + 1);
+  130|      0|  } else {
+  132|      0|    cout << "invalid type: " << type << endl;
+  133|      0|  }
+  134|      0|}
+  177|      0|    cout << "invalid index: " << index << endl;
+  178|      0|    return nullptr;
+  179|      0|  }
+  186|      0|    cout << "invalid index: " << index << endl;
+  187|      0|    return nullptr;
+  188|      0|  }
+  195|      0|    cout << "invalid index: " << index << endl;
+  196|      0|    return nullptr;
+  197|      0|  }
+   34|      0|  void set_title(const string &title) { this->title = title; }
+   36|      0|  void set_year(int year) { this->year = year; }
+   40|      0|  void set_director(const string &director) { this->director = director; }
+   42|      0|  void set_borrowed(int isBorrowed) { this->borrowed = isBorrowed; }
+   60|      0|  string Gener() const { return gener; };
+    8|      0|    cerr << "File not found: " << fileName << endl;
+    9|      0|    return;
+   10|      0|  }
+   27|      0|      genre = genre.substr(1);
+   28|      0|    }
+   55|      0|    cerr << "File not found: " << fileName << endl;
+   56|      0|    return;
+   57|      0|  }
+   70|      0|        cerr << "Invalid customer ID: " << customerID << endl;
+   71|      0|      }
+   73|      0|      cerr << "Invalid input: " << line << endl;
+   74|      0|    }
+   84|      0|    cerr << "File not found" << endl;
+   85|      0|  }
+  123|      0|            if (customers.indexOf(customerID) != -1) {
+  124|      0|              bool borrowed = movies->borrowMovie(genre, index);
+  125|      0|              if (borrowed) { // Only adds transaction if movie is successfully
+  127|      0|                const auto *c = movies->getComedyMovie(index);
+  128|      0|                Transaction *t =
+  129|      0|                    new Transaction('F', c->Title(), c->Director(), 'B');
+  130|      0|                customers.get(customerID)->Borrow('F', index);
+  131|      0|                customers.get(customerID)
+  132|      0|                    ->addHistory(t); // Add transaction to customer history.
+  133|      0|              }
+  134|      0|            } else {
+  135|      0|              cerr << "Customer not found : " << customerID << endl;
+  136|      0|            }
+  137|      0|          }
+  156|      0|            if (customers.indexOf(customerID) != -1) {
+  157|      0|              bool borrowed = movies->borrowMovie(genre, index);
+  158|      0|              if (borrowed) { // Only adds transaction if movie is successfully
+  160|      0|                const auto *d = movies->getDramaMovie(index);
+  161|      0|                Transaction *t =
+  162|      0|                    new Transaction('D', d->Title(), d->Director(), 'B');
+  163|      0|                customers.get(customerID)->Borrow('D', index);
+  164|      0|                customers.get(customerID)
+  165|      0|                    ->addHistory(t); // Add transaction to customer history.
+  166|      0|              }
+  167|      0|            } else {
+  168|      0|              cerr << "Customer not found : " << customerID << endl;
+  169|      0|            }
+  170|      0|          }
+  184|      0|            if (customers.indexOf(customerID) != -1) {
+  185|      0|              bool borrowed = movies->borrowMovie(genre, index);
+  186|      0|              if (borrowed) { // Only adds transaction if movie is successfully
+  188|      0|                const auto *c = movies->getClassicMovie(index);
+  189|      0|                Transaction *t =
+  190|      0|                    new Transaction('C', c->Title(), c->Director(), 'B');
+  191|      0|                customers.get(customerID)->Borrow('C', index);
+  192|      0|                customers.get(customerID)
+  193|      0|                    ->addHistory(t); // Add transaction to customer history.
+  194|      0|              }
+  195|      0|            } else {
+  196|      0|              cerr << "Customer not found : " << customerID << endl;
+  197|      0|            }
+  198|      0|          }
+  239|      0|            const auto *c = movies->getComedyMovie(index);
+  240|      0|            if (customers.indexOf(customerID) != -1) {
+  241|      0|              if (customers.get(customerID)->currentlyBorrowed('F', index)) {
+  242|      0|                movies->returnMovie(genre, index);
+  243|      0|                Transaction *t =
+  244|      0|                    new Transaction('F', c->Title(), c->Director(), 'R');
+  245|      0|                customers.get(customerID)->Return('F', index);
+  246|      0|                customers.get(customerID)
+  247|      0|                    ->addHistory(t); // Add transaction to customer history.
+  248|      0|              } else {
+  249|      0|                cerr << customers.get(customerID)->FirstName() << " "
+  250|      0|                     << customers.get(customerID)->LastName()
+  251|      0|                     << " tried to return a comedy movie they never borrowed: "
+  252|      0|                     << c->Title() << "by " << c->Director() << endl;
+  253|      0|              }
+  254|      0|            } else {
+  255|      0|              cerr << "Customer not found : " << customerID << endl;
+  256|      0|            }
+  257|      0|          }
+  259|      0|          string director;
+  260|      0|          string title;
+  261|      0|          string currToken;
+  262|      0|          vector<string> tokens;
+  263|      0|          while (getline(parse, currToken, ',')) {
+  264|      0|            if (currToken[0] == ' ') {
+  265|      0|              currToken.erase(0, 1); // Space trimmer.
+  266|      0|            }
+  267|      0|            tokens.push_back(currToken);
+  268|      0|          }
+  269|      0|          director = tokens[0];
+  270|      0|          title = tokens[1];
+  271|      0|          int index = movies->indexOfDrama(director, title);
+  272|      0|          if (index == -1) {
+  273|      0|            cerr << "Drama Movie not found: " << director << " " << title
+  274|      0|                 << endl;
+  275|      0|          } else {
+  276|      0|            const auto *d = movies->getDramaMovie(index);
+  277|      0|            if (customers.indexOf(customerID) != -1) {
+  278|      0|              if (customers.get(customerID)->currentlyBorrowed('D', index)) {
+  279|      0|                movies->returnMovie(genre, index);
+  280|      0|                Transaction *t =
+  281|      0|                    new Transaction('D', d->Title(), d->Director(), 'R');
+  282|      0|                customers.get(customerID)->Return('D', index);
+  283|      0|                customers.get(customerID)
+  284|      0|                    ->addHistory(t); // Add transaction to customer history.
+  285|      0|              } else {
+  286|      0|                cerr << customers.get(customerID)->FirstName() << " "
+  287|      0|                     << customers.get(customerID)->LastName()
+  288|      0|                     << " tried to return a drama movie they never borrowed: "
+  289|      0|                     << d->Title() << "by " << d->Director() << endl;
+  290|      0|              }
+  291|      0|            } else {
+  292|      0|              cerr << "Customer not found : " << customerID << endl;
+  293|      0|            }
+  294|      0|          }
+  308|      0|            const auto *c = movies->getClassicMovie(index);
+  309|      0|            if (customers.indexOf(customerID) != -1) {
+  310|      0|              if (customers.get(customerID)->currentlyBorrowed('C', index)) {
+  311|      0|                movies->returnMovie(genre, index);
+  312|      0|                Transaction *t =
+  313|      0|                    new Transaction('C', c->Title(), c->Director(), 'R');
+  314|      0|                customers.get(customerID)->Return('D', index);
+  315|      0|                customers.get(customerID)
+  316|      0|                    ->addHistory(t); // Add transaction to customer history.
+  317|      0|              } else {
+  318|      0|                cerr << customers.get(customerID)->FirstName() << " "
+  319|      0|                     << customers.get(customerID)->LastName()
+  320|      0|                     << " tried to return a classic movie they never borrowed: "
+  321|      0|                     << c->Title() << "by " << c->Director() << endl;
+  322|      0|              }
+  323|      0|            } else {
+  324|      0|              cerr << "Customer not found : " << customerID << endl;
+  325|      0|            }
+  326|      0|          }
+  328|      0|          cerr << "Invalid movie type " << genre << endl;
+  329|      0|        }
+  331|      0|        cerr << "Invalid media type: " << media << endl;
+  332|      0|      }
+   29|      0|  assert(f.Director() == "Michael Moore");
+   30|      0|  assert(f.Title() == "Fahrenheit 911");
+   31|      0|  assert(f.Year() == 2001);
+   32|      0|  assert(f == f2);
+   33|      0|  assert(!(f == f3));
+   34|      0|  assert(f > f3);
+   35|      0|  assert(f3 < f);
+   37|      0|  Drama hamilton(3, "Thomas Kail", "Hamilton", 2020);
+   41|      0|  assert(!(hamilton == d));
+   42|      0|  assert(d.Director() == "Steven Caple Jr");
+   43|      0|  assert(d.Title() == "Creed II");
+   44|      0|  assert(d.Year() == 2018);
+   45|      0|  assert(hamilton > d);
+   47|      0|  Classic c(3, "Toru Hara", "My Neighbor Totoro", "satsuke", "mei", 1993, 5);
+   49|      0|  assert(c.Director() == "Toru Hara");
+   50|      0|  assert(c.MajorActorFirstName() == "satsuke");
+   51|      0|  assert(c.MajorActorLastName() == "mei");
+   52|      0|  assert(c.Month() == 5);
+   53|      0|  assert(c.Year() == 1993);
+   54|      0|  Classic shrek(5, "Andrew Adamson", "Shrek", "Shrek", "the Ogre", 2001, 4);
+   56|      0|  assert(shrek == shrek);
+   57|      0|  assert(c < shrek);
+   58|      0|  assert(shrek > c);
+   59|      0|  cout << "End test" << endl;
+   78|      0|  assert(h.get(two) == "two");
+   79|      0|  assert(h.indexOf(one) == 0);
+   80|      0|  h.remove(four);
+   82|      0|  h.clear();
+   84|      0|  cout << "End testHashTable" << endl;
+   92|      0|  assert(c->LastName() == "BOOMER");
+   93|      0|  assert(c->FirstName() == "OLD");
+   94|      0|  assert(c->currentlyBorrowed('C', 1) == true);
+   95|      0|  c->Return('C', 1);
+   97|      0|  cout << "End testCustomers" << endl;
+  117|      0|  char commandType;
+  126|      0|  cout << "End pisanTest" << endl;
+    4|      0|                         char transactionType) {
+    6|      0|  movie_title = movieTitle;
+    7|      0|  movie_director = movieDirector;
+    9|      0|  if (genre == 'F') {
+   10|      0|    movie_genre = "Comedy";
+   11|      0|  } else if (genre == 'D') {
+   12|      0|    movie_genre = "Drama";
+   13|      0|  } else if (genre == 'C') {
+   14|      0|    movie_genre = "Classic";
+   15|      0|  } else {
+   16|      0|    cout << "invalid genre for transaction: " << genre << endl;
+   17|      0|  }
+   19|      0|  if (transactionType == 'B') {
+   20|      0|    action = "borrow";
+   21|      0|  } else if (transactionType == 'R') {
+   22|      0|    action = "return";
+   23|      0|  } else {
+   24|      0|    cout << "invalid transaction type for transaction: " << transactionType
+   25|      0|         << endl;
+   26|      0|  }
+   27|      0|}
+   15|      0|  friend ostream &operator<<(ostream &out, const Transaction &transaction) {
+   16|      0|    out << transaction.action << "ed: " << transaction.movie_title << " by "
+   17|      0|       << transaction.movie_director << ", " << transaction.movie_genre << endl;
+   18|      0|    return out;
+   19|      0|  }
+Tue Jun  6 03:11:21 UTC 2023
+=====================================================
+To create an output.txt file with all the output from this script
+Run the below command
+      ./create-output.sh > output.txt 2>&1 
+=====================================================

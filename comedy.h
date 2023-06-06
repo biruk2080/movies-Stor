@@ -9,7 +9,10 @@ public:
       : Movie(stock, title, director, year, 'F') { set_gener("Comedy"); }
 
 
-  bool operator!=(const Movie& other) const { return !(*this == other); }
+
+
+
+  bool operator!=(const Movie& other) const override { return !(*this == other); }
 
   bool operator==(const Movie& other) const override  {
     return Type() == other.Type() &&
@@ -17,6 +20,7 @@ public:
            Title() == other.Title() &&
            Year() == other.Year();
   }
+
   bool operator<(const Movie& other) const override {
 
     if (Title() != other.Title()) {

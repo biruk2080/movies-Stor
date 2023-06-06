@@ -1,9 +1,3 @@
-/**
- * Testing ass4 movie store functions
- *
- * @author Yusuf Pisan
- * @date 19 Jan 2019
- */
 #include "classic.h"
 #include "comedy.h"
 #include "customer.h"
@@ -18,8 +12,6 @@
 #include <iostream>
 #include <map>
 #include <sstream>
-
-using namespace std;
 
 void testAllMovies() {
   cout << "Start testAlLMovies" << endl;
@@ -89,12 +81,12 @@ void testHashTable() {
 void testCustomers() {
   cout << "Start testCustomers" << endl;
   Customer *c = new Customer("OLD", "BOOMER", 0000);
-  c->borrowMovie('C', 1);
-  assert(c->getCustomerID() == 0000);
-  assert(c->getLastName() == "BOOMER");
-  assert(c->getFirstName() == "OLD");
+  c->Borrow('C', 1);
+  assert(c->CustomerID() == 0000);
+  assert(c->LastName() == "BOOMER");
+  assert(c->FirstName() == "OLD");
   assert(c->currentlyBorrowed('C', 1) == true);
-  c->returnMovie('C', 1);
+  c->Return('C', 1);
   assert(c->currentlyBorrowed('C', 1) == false);
   cout << "End testCustomers" << endl;
 }
@@ -103,8 +95,8 @@ void testStoreFinal() {
   cout << "=====================================" << endl;
   cout << "Start testStoreFinal" << endl;
   Store s;
-  s.fillStoreWithCustomers("data4customers.txt");
-  s.fillInventory("data4movies.txt");
+  s.AddCustomer("data4customers.txt");
+  s.CreateInventory("data4movies.txt");
   s.processTransactions("data4commands.txt");
   cout << "End testStoreFinal" << endl;
   cout << "=====================================" << endl;

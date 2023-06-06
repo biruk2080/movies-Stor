@@ -7,6 +7,8 @@
 using namespace std;
 
 class Movie {
+
+  // Output stream to print out movies 
   friend ostream &operator<<(ostream &out, const Movie &other) {
 
     out << "Genre/Title: " <<other.gener<<", " + other.title
@@ -40,6 +42,7 @@ public:
   void set_borrowed(int isBorrowed) { this->borrowed = isBorrowed; }
 
   void set_gener(string gener) { this-> gener = gener; };
+
   // Getters 
 
   string Title() const { return title; } 
