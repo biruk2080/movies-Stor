@@ -61,7 +61,7 @@ bool Inventory::borrowMovie(const string &type, int index) {
     int stock = comedies[index]->Stock();
     // check to make sure there is avialbale stock to rent 
     if (stock - 1 < 0) {
-      cout << "Out of stock " << comedies[index]->Title() << endl;
+      cout << "out of stock " << comedies[index]->Title() << endl;
       return false;
     }
     // decrease the stock and increase the number of borrow movie
@@ -75,13 +75,13 @@ bool Inventory::borrowMovie(const string &type, int index) {
     int stock = dramas[index]->Stock();
     // check to make sure there is avialbale stock to rent 
     if (stock - 1 < 0) {
-      cout << "Out of stock " << dramas[index]->Title()
+      cout << "out of stock " << dramas[index]->Title()
            << endl;
       return false;
     }
     // decrease the stock and increase the number of borrow movie
-    dramas[index]->set_stock(stock - 1);
     dramas[index]->set_borrowed(dramas[index]->Borrowed() + 1);
+    dramas[index]->set_stock(stock - 1);
     return true;
   }
   // check the movie gener
@@ -90,17 +90,17 @@ bool Inventory::borrowMovie(const string &type, int index) {
     int stock = classics[index]->Stock();
     // check to make sure there is avialbale stock to rent 
     if (stock - 1 < 0) {
-      cout << "Out of stock " << classics[index]->Title()
+      cout << "out of stock " << classics[index]->Title()
            << endl;
       return false;
     }
     // decrease the stock and increase the number of borrow movie
-    classics[index]->set_stock(stock - 1);
     classics[index]->set_borrowed(classics[index]->Borrowed() + 1);
+    classics[index]->set_stock(stock - 1);
     return true;
   }
 // display the messgae for invalid type of movie 
-  cout << "Invalid Type: " << type << endl;
+  cout << "invalid type: " << type << endl;
   return false;
 }
 // this method recive movie type and index on the inventory vector 
@@ -112,43 +112,41 @@ void Inventory::returnMovie(const string &type, int index) {
     // get the stock of the movie 
     int stock = comedies[index]->Stock();
      // increase the stock and decrease the number of borrow movie
-    comedies[index]->set_stock(stock + 1);
     comedies[index]->set_borrowed(comedies[index]->Borrowed() - 1);
+    comedies[index]->set_stock(stock + 1);
   } else if (type == "D") {
     // get the stock of the movie 
     int stock = dramas[index]->Stock();
       // increase the stock and decrease the number of borrow movie
-    dramas[index]->set_stock(stock + 1);
     dramas[index]->set_borrowed(dramas[index]->Borrowed() - 1);
+    dramas[index]->set_stock(stock + 1);
   } else if (type == "C") {
     // get the stock of the movie 
     int stock = classics[index]->Stock();
     // increase the stock and decrease the number of borrow movie
-    classics[index]->set_stock(stock + 1);
     classics[index]->set_borrowed(classics[index]->Borrowed() - 1);
+     classics[index]->set_stock(stock + 1);
   } else {
     // display the messgae for invalid type of movie 
-    cout << "Invalid Type: " << type << endl;
+    cout << "invalid type: " << type << endl;
   }
 }
 // return index of comedy movie in vector.
 int Inventory::indexOfComedy(const string &title, int releaseYear) {
   for (int i = 0; i < comedies.size(); i++) {
     // check the the movie is exist, if it's return the index
-    if (comedies[i]->Title() == title &&
-        comedies[i]->Year() == releaseYear) {
+    if (comedies[i]->Title() == title && comedies[i]->Year() == releaseYear) {
       return i;
     }
   }
   // Not found
   return -1; 
 }
-
-// Index of drama movie in vector.
+// index of drama movie in vector.
 int Inventory::indexOfDrama(const string &director, const string &title) {
   for (int i = 0; i < dramas.size(); i++) {
-    if (dramas[i]->Director() == director &&
-        dramas[i]->Title() == title) {
+    // search the index of the classic movie from the drama inventory vector  
+    if (dramas[i]->Director() == director && dramas[i]->Title() == title) {
       return i;
     }
   }
@@ -159,6 +157,7 @@ int Inventory::indexOfDrama(const string &director, const string &title) {
 int Inventory::indexOfClassic(const int &releaseMonth, const int &releaseYear,
                               const string &majorActorFirstName,
                               const string &majorActorLastName) {
+  // search the index of the classic movie from the classic inventory vector                             
   for (int i = 0; i < classics.size(); i++) {
     if (classics[i]->MajorActorFirstName() == majorActorFirstName &&
         classics[i]->MajorActorLastName() == majorActorLastName &&
@@ -174,7 +173,7 @@ int Inventory::indexOfClassic(const int &releaseMonth, const int &releaseYear,
 //checking the movie exist on inventory 
 Comedy *Inventory::getComedyMovie(const int &index) {
   if ( index < 0 || index > comedies.size()) {
-    cout << "Invalid Index: " << index << endl;
+    cout << "invalid index: " << index << endl;
     return nullptr;
   }
   return comedies[index];
@@ -183,7 +182,7 @@ Comedy *Inventory::getComedyMovie(const int &index) {
 //checking the movie exist on inventory 
 Drama *Inventory::getDramaMovie(const int &index) {
   if (index < 0 || index > dramas.size() ) {
-    cout << "Invalid Index: " << index << endl;
+    cout << "invalid index: " << index << endl;
     return nullptr;
   }
   return dramas[index];
@@ -192,7 +191,7 @@ Drama *Inventory::getDramaMovie(const int &index) {
 //checking the movie exist on inventory 
 Classic *Inventory::getClassicMovie(const int &index) {
   if ( index < 0 || index > classics.size()) {
-    cout << "Invalid Index: " << index << endl;
+    cout << "invalid index: " << index << endl;
     return nullptr;
   }
   return classics[index];

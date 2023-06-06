@@ -1,11 +1,9 @@
 #include "transaction.h"
 
 Transaction::Transaction(char genre, string movieTitle, string movieDirector, char transactionType) {
-  
   // assign variable 
-   movie_title = movieTitle;
-  movie_director = movieDirector;
-  
+  movie_title = movieTitle;
+  movie_director = movieDirector; 
   // check the movie type 
   if (genre == 'F') {
     movie_genre = "Comedy";
@@ -14,7 +12,7 @@ Transaction::Transaction(char genre, string movieTitle, string movieDirector, ch
   } else if (genre == 'C') {
     movie_genre = "Classic";
   } else {
-    cout << "Invalid genre for transaction: " << genre << endl;
+    cout << "invalid genre for transaction: " << genre << endl;
   }
 // check the transcation type 
   if (transactionType == 'B') {
@@ -22,7 +20,7 @@ Transaction::Transaction(char genre, string movieTitle, string movieDirector, ch
   } else if (transactionType == 'R') {
     action = "return";
   } else {
-    cout << "Invalid transaction type for transaction: " << transactionType
+    cout << "invalid transaction type for transaction: " << transactionType
          << endl;
   }
 }
